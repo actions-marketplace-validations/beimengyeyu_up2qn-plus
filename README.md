@@ -8,7 +8,7 @@
 
 ## 应用名称
 ```bash
-beimengyeyu/up2qn@master
+beimengyeyu/up2qn-plus@master
 ```
 
 ## 亮点
@@ -32,7 +32,7 @@ jobs:
       uses: actions/checkout@v2
 
     - name: 执行上传
-      uses: beimengyeyu/up2qn@master
+      uses: beimengyeyu/-plus@master
       with:
         bucket: static # 空间名称，按实际情况填写
         zone: 华南 # 存储区域，按实际情况填写 备注1
