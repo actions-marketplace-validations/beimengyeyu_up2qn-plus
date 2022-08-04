@@ -1,0 +1,20 @@
+diff --git a/node_modules/qiniu/qiniu/conf.js b/node_modules/qiniu/qiniu/conf.js
+index 142dd24..8773efa 100644
+--- a/node_modules/qiniu/qiniu/conf.js
++++ b/node_modules/qiniu/qiniu/conf.js
+@@ -1,5 +1,6 @@
+ const os = require('os');
+ const pkg = require('../package.json');
++const core = require('@actions/core');
+ 
+ exports.ACCESS_KEY = '<PLEASE APPLY YOUR ACCESS KEY>';
+ exports.SECRET_KEY = '<DONT SEND YOUR SECRET KEY TO ANYONE>';
+@@ -17,7 +18,7 @@ exports.FormMimeUrl = 'application/x-www-form-urlencoded';
+ exports.FormMimeJson = 'application/json';
+ exports.FormMimeRaw = 'application/octet-stream';
+ exports.RS_HOST = 'http://rs.qiniu.com';
+-exports.RPC_TIMEOUT = 120000; // 120s
++exports.RPC_TIMEOUT = core.getInput("rpc_timeout") || 120000; // 120s
+ exports.UC_HOST = 'uc.qbox.me';
+ 
+ // proxy

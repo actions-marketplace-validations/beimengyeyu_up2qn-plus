@@ -1,7 +1,8 @@
+本仓库fork自https://github.com/luochongfei/up2qn 添加功能和bug修复
+
 # up2qn
 > up2qn 是一款 github Action 应用。可以通过 github workflow 将 github 文件内容自动同步到七牛云存储上。
 
-本仓库fork自https://github.com/luochongfei/up2qn 添加功能和bug修复
 
 ![上传日志展示](src/demo1.jpg)
 

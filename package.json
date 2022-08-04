@@ -4,7 +4,8 @@
   "description": "上传文件到七牛云存储",
   "main": "dist/index.js",
   "scripts": {
-    "build": "ncc build src/index.js -o dist/ -m"
+    "build": "ncc build src/index.js -o dist/ -m",
+    "postinstall": "patch-package"
   },
   "keywords": [
     "qiniu",
@@ -20,6 +21,7 @@
     "qiniu": "^7.3.2"
   },
   "devDependencies": {
-    "@zeit/ncc": "^0.22.3"
+    "@zeit/ncc": "^0.22.3",
+    "patch-package": "^6.4.7"
   }
 }
