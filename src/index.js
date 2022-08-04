@@ -27,7 +27,7 @@ class Up2Qn {
         // 上传配置
         const config = new qiniu.conf.Config();
         config.zone = qiniu.zone[zoneConfig[setting.zone]];
-        config.timeout = 0
+        conf.RPC_TIMEOUT = 600000;
 
         // 文件上传对象
         this.formUploader = new qiniu.form_up.FormUploader(config);
