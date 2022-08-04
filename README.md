@@ -41,6 +41,7 @@ jobs:
         local_dir: web # 本地文件夹
         local_exclude: "**/node_modules/**" # 要排除的内容，要符合 glob 格式
         target_dir: / # 要上传到七牛云中的文件夹
+        rpc_timeout: 120000 # 文件上传超时时间默认2分钟
 ```
 
 > 备注1 存储区域从七牛云空间概览中获取，如华南、华东、华北、北美
