@@ -1,7 +1,7 @@
 # up2qn
 > up2qn 是一款 github Action 应用。可以通过 github workflow 将 github 文件内容自动同步到七牛云存储上。
 
-![上传日志展示](./src/demo1.jpg)
+![上传日志展示](src/demo1.jpg)
 
 ## 应用名称
 ```bash

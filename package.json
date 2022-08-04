@@ -18,5 +18,8 @@
     "@actions/core": "^1.2.6",
     "glob": "^7.1.6",
     "qiniu": "^7.3.2"
+  },
+  "devDependencies": {
+    "@zeit/ncc": "^0.22.3"
   }
 }
