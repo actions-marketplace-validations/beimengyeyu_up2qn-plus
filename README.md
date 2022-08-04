@@ -57,6 +57,9 @@ jobs:
 | local_dir  |  本地文件夹（上传时不包含此文件夹本身）| dist | - |
 | local_exclude  | 本地要排除的文件夹，需符合 glob 格式 *备注1* | - | - |
 | target_dir  |  要上传到七牛云中的文件夹 | / | - |
+| rpc_timeout  |  要上传到七牛云中的文件夹 | 120000 | - |
+
+
 
 > 备注1 多个可用逗号分隔，例如想排除 node_modules 文件和 所有 .map 后缀文件，可以这样写：
 local_exclude: \*\*/node_modules/\*\*,\*\*/*.map

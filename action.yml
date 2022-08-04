@@ -27,6 +27,9 @@ inputs:
   target_dir:
     description: '七牛云空间里的文件夹'
     default: '/'
+  rpc_timeout:
+    description: '超时时间'
+    default: '120000'
 
 runs:
   using: 'node12'
